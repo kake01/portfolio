@@ -1,0 +1,198 @@
+body {
+  margin: unset;
+  padding: unset;
+  /* background: black; */
+}
+/*----------------
+メニュー関係
+------------------*/
+nav {background: darkgrey;}
+nav ul {
+  overflow: hidden;
+  padding: 0 5%;
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  width: 33%;
+}
+nav ul li a {
+  display: block;
+  padding: 17px 5%;
+  width: 90%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li :hover {
+  background:  white;
+  color: black
+}
+/*-------------------
+footer関係
+---------------------*/
+footer {
+  height: 75px;
+  position: relative;
+}
+footer a {padding-right: 10px;}
+.creator_contact {display: flex;}
+.copyright {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.copyright p {color: black;}
+.aboout {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}
+/* ------------------
+fontawesome関係
+--------------------- */
+.fa-google-plus-g {color: #ed1849;}
+.fa-twitter {color: #1da1f2;}
+.fa-discord {
+  color: white;
+  background: #7389dc;
+}
+/* -------------------
+目標関係
+---------------------- */
+.objective {
+  text-align: center;
+  border-style: dashed;
+  margin: 10px;
+}
+.logical_expansion {display: flex;}
+.last_year, .this_year{
+  width: 35%;
+  padding: 25px;
+}
+.arrow {width: 30%;}
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+/* ------------------
+具体的な手段関係
+-------------------- */
+.Concrete {
+  text-align: center;
+  border-style: dashed;
+  border-color: red;
+  margin: 10px;
+}
+/*　---------------------
+具体的なグラフに関して
+------------------------ */
+.objective_visualization .description {display: flex;}
+.objective_visualization  .description_text {
+  width: 50%;
+  order: 1;
+}
+.objective_visualization  .description_img {
+  width: 50%;
+  order: 2;
+}
+/*　-----------------------
+具体的なチャットボットに関して
+-------------------------- */
+.objective_chatbot .description {display: flex;}
+.objective_chatbot .description_text {width: 50%;}
+.objective_chatbot .description_img {width: 50%;}
+.objective_chatbot img {height: 300px;}
+/* -------------------------
+実際に作ってみた関係
+--------------------------- */
+.Actual {
+  text-align: center;
+  border-style: dashed;
+  border-color: teal;
+  margin: 10px;
+}
+.Actual .caution_color {color: brown;}
+/* ---------------
+グラフ関係
+------------------ */
+.health_log {display: flex;}
+.graph {
+  width: 50%;
+  height: 400px;
+}
+.graph h1 {
+  text-align: center;
+  font-family: serif;
+}
+.ct-perfect-fourth {
+  display: block;
+  height: 200px;
+  padding-bottom: unset;
+}
+/*--------------------
+サイトの注意書き関係
+--------------------*/
+.warning {width: 50%;}
+.frame_red {border-color: #ff4500;}
+.frame {
+  width: 80%;
+  margin: 30px auto 20px;
+  padding: 30px 20px 0;
+  border: 3px solid red;
+  position: relative;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.frame_title {
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.frame_title .fa {margin-right: 5px;}
+.caution {
+  background-color: #ff4500;
+  border: 2px solid #ff4500;
+  color: #fff;
+  border-radius: 3px;
+}
+/* ------------------
+スマホ(横向きも含む)のレスポンシブ関係
+--------------------- */
+@media screen and (max-width:1000px) {
+  .logical_expansion {display: unset;}
+  .last_year, .this_year{
+    width: 95%;
+    padding: unset;
+    margin: auto;
+  }
+  .arrow {
+    transform: rotate( 90deg );  /* 2D(平面)で回転 */
+    margin: auto;
+  }
+  /*　-----------------------
+  具体的なグラフに関して
+  -------------------------- */
+  .objective_visualization .description {display: unset;}
+  .objective_visualization .description_text,
+  .objective_visualization .description_img {
+    width: 90%;
+    margin: auto;
+  }
+  /*　-----------------------
+  具体的なチャットボットに関して
+  -------------------------- */
+  .objective_chatbot .description {display: unset;}
+  .objective_chatbot .description_text,
+  .objective_chatbot .description_img {
+    width: 90%;
+    margin: auto;
+  }
+  /* -------------------------
+  実際に作ってみた関係
+  --------------------------- */
+  .health_log {display: unset;}
+  .warning {width: 100%;}
+}
